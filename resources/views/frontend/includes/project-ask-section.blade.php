@@ -1,0 +1,15 @@
+<!--Project Ask Section-->
+<section class="project-ask">
+    <div class="container">
+        <div class="pro-ask-content">
+            <h1 data-aos="slide-in-left">Do You Have Any Project?</h1>
+            <p>I loved painting and drawing for many reasons. One of them was that all it really required was me, a
+                pencil and a pad. It was something I was passionate about, and still am I loved painting.</p>
+            <div class="btn-contact wow zoomIn" data-wow-delay=".5s">
+                <span class="con-btn"><a href="{{ route('frontend.contact') }}">Let's Talk</a></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--/Project Ask Section-->
