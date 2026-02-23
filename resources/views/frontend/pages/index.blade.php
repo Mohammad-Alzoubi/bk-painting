@@ -168,7 +168,7 @@
                             Today, Bright King Painting is synonymous with exceptional quality, refined workmanship, and an elevated client experience—standards we uphold in every project we deliver.                        </p>
 
                         <div class="btn-learn">
-                            <span class="learn-ab"><a href="about-us.html">Learn More</a></span>
+                            <span class="learn-ab"><a href="{{ route("frontend.about") }}">Learn More</a></span>
                         </div>
                     </div>
                 </div>
