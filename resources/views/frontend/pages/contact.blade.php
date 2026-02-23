@@ -26,6 +26,13 @@ Contact Us @stop
     </style>
 @endpush
 
+@if(session('success'))
+    <div class="alert alert-success alert-dismissible fade show"
+         style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+        <strong>Success!</strong> {{ session('success') }}
+    </div>
+@endif
+
 @section('content')
     <!--Contact Us-Hero Section-->
     <section class="service-area">
@@ -150,4 +157,12 @@ Contact Us @stop
 @endsection
 
 @push('js')
+    <script>
+        setTimeout(function() {
+            let alert = document.querySelector('.alert');
+            if(alert){
+                alert.remove();
+            }
+        }, 4000);
+    </script>
 @endpush

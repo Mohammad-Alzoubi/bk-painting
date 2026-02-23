@@ -20,7 +20,7 @@ class ContactController extends Controller
             'message'  => 'nullable|string'
         ]);
 
-//        ContactMessage::create($validated);
+        ContactMessage::create($validated);
 //        dd($validated);
         Mail::raw(
             "Name: {$validated['name']}\n" .
@@ -34,6 +34,6 @@ class ContactController extends Controller
             }
         );
 
-        return back()->with('success', 'Message sent successfully ✅');
+        return back()->with('success', 'Message sent successfully!');
     }
 }
